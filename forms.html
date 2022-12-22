@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär</title>
+</head>
+<body>
+    <h1>Formulär</h1>
+
+    <a href="index.html">Startsida</a>
+    <br><br>
+    <a href="media.html">Media --></a>
+    <br>
+    <br>
+    
+    <form>
+
+        <!--PERSONLIG BOX-->
+        <fieldset> <!-- Skapar en box runt infon inanför fieldset -->
+            <legend>Personlig information:</legend>
+            <label for="name">Namn:</label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="Ange ditt namn här..." > <!-- Gör det klickbart till rutan-->
+             <br><br>
+
+            <label for="email">E-post:</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Ange din e-post..." required> <!-- REQUIRED gör att man måste fylla in för att kunna skicka-->
+           
+            <br><br>
+            <label for="customer-status">Är du kund hos oss:</label>
+            <br>
+            <select name="customer-status" id="customer-status">
+                <option value="" disabled selected >Ange din status... <!--TOM RUTA-->
+                <option value="is-customer">JA</option> <!-- Alternartivet-->
+                <option value="is-customer">NEJ</option> 
+            </select>
+        </fieldset>
+
+        <!--BOXAR --> 
+        <br><br>
+        <input type="checkbox" name="volvo" id="volvo" value="volvo">
+        <label for="volvo">Jag kör Volvo</label>
+        <br>
+        <input type="checkbox" name="bmw" id="bmw" value="bmw">
+        <label for="bmw">Jag kör BMW</label>
+        <br>
+        <input type="checkbox" name="audi" id="audi" value="audi">
+        <label for="audi">Jag kör Audi</label>
+
+        <br><br>
+
+        <!--CIRCLE BOXES --> 
+        <input type="radio" name="car" id="bmw" value="bmw">
+        <label for="bmw">Jag kör BMW</label>
+        <br>
+        <input type="radio" name="car" id="audi" value="audi">
+        <label for="bmw">Jag kör Audi</label>
+        <br>
+        <input type="radio" name="car" id="volvo" value="volvo">
+        <label for="bmw">Jag kör Volvo</label>
+
+        <br><br>
+
+        <!--BOX FOR DATE-->
+        <input type="date" name="date" id="date">
+
+        <!-- A BOX FOR CHOOSING COLOR FOR EXAMPLE BACKGROUND-->
+        <br><br>
+        <input type="color" name="color" id="color">
+
+        <!-- BOX FOR CHOOSING A FILE-->
+        <br><br>
+        <input type="file" name="file" id="file">
+
+        <!-- A RANGE CHECK-->
+        <br><br>
+        <input type="range" name="range" id="range">
+
+        <!-- BOX FOR PASSWORD-->
+        <br><br>
+        <input type="password" name="password" id="password">
+
+        <br><br>
+
+        <!--MESSAGE BOX-->
+        <label for="message">Meddelande:</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Skriv ditt meddelande här..."></textarea>
+        <br>
+        <input type="submit" value="Skicka meddelande">
+
+    </form>
+
+
+</body>
+</html>
