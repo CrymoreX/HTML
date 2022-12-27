@@ -1,18 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --dark: rgb(230, 230, 230);
+    --accent: rgb(16, 115, 29);
+    --font1: 'Roboto';
+    --font2: Arial, Helvetica, sans-serif;
+
+}
+/* CSS-reset */
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(65, 146, 151, 0.5); /* Denna väg för färgval eller... */
+    background-color: #00000050;/* ...denna väg för färgval */
+    background-color: rgb(39, 39, 39);
 }
 
 h1 {
-    color: deeppink;
+    color: var(--dark);
+    font-family: var(--font2);
+    
 }
+
 
 p {
-font-size: 2em;
-
+    font-size: 2em;
+    color: var(--dark);
+    font-family: var(--font1);
+    font-weight: 400;
 }
+
+
+a {
+    color: var(--accent)
+}
+
+
 .text {
     font-size: 0.5em;
 }
+
     #punkt1 {
         color: red;
+    }
+
+
+    /* LEKTION 4 */
+
+    .wrapper {
+        background-color: deeppink;
+        width: 50%;
+    }
+
+    .container {
+        background-color: rgb(141, 148, 126);
+        width: 50%; /* DYNAMISKT MÅTT, Best Practice! */
+        min-width: 400px; /* MINSTA FÖRMINSKNING */
+        /* height: 250px; */
+        border-style: solid;
+        border-color: rgb(53, 101, 142);
+        border-width: 10px;
+    }
+
+    .container p { /* NESTED CONTAINER */ 
+        background-color: blue;
+        width: 100vw;
+        height: 100vh;
+       /* padding: 10%; */
+       /* padding: 10%; */
+    }
+    .container1 {
+        background-color: yellowgreen;
+        width: 50%;
+    }
+    .container2 {
+        background-color: purple;
+        width: 100%;
+    }
+    br{
+        margin: 25px;
     }
